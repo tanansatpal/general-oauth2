@@ -28,7 +28,7 @@ list so other people can find it.
 
 ## Install
 
-    $ npm install passport-oauth2
+    $ npm install general-oauth2
 
 ## Usage
 
