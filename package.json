@@ -1,7 +1,7 @@
 {
-  "name": "passport-oauth2",
+  "name": "oauth2",
   "version": "1.4.0",
-  "description": "OAuth 2.0 authentication strategy for Passport.",
+  "description": "OAuth 2.0 authentication strategy for Passport with ebau RuName support.",
   "keywords": [
     "passport",
     "auth",
@@ -13,16 +13,12 @@
     "oauth2"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Satpal Tanan",
+    "email": "tanansatpal@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-oauth2.git"
-  },
-  "bugs": {
-    "url": "http://github.com/jaredhanson/passport-oauth2/issues"
+    "url": "https://github.com/tanansatpal/passport-oauth2"
   },
   "license": "MIT",
   "licenses": [
