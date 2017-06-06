@@ -1,10 +1,11 @@
-# passport-oauth2
+# oauth2
 
 [![Build](https://img.shields.io/travis/jaredhanson/passport-oauth2.svg)](https://travis-ci.org/jaredhanson/passport-oauth2)
 [![Coverage](https://img.shields.io/coveralls/jaredhanson/passport-oauth2.svg)](https://coveralls.io/r/jaredhanson/passport-oauth2)
 [![Quality](https://img.shields.io/codeclimate/github/jaredhanson/passport-oauth2.svg?label=quality)](https://codeclimate.com/github/jaredhanson/passport-oauth2)
 [![Dependencies](https://img.shields.io/david/jaredhanson/passport-oauth2.svg)](https://david-dm.org/jaredhanson/passport-oauth2)
 
+This is a fork of [passport-oauth2](https://github.com/jaredhanson/passport-oauth2) by Jared Hanson. Unless noted, this is a drop-in replacement. You don't have to replace your client code.
 
 General-purpose OAuth 2.0 authentication strategy for [Passport](http://passportjs.org/).
 
@@ -45,6 +46,7 @@ passport.use(new OAuth2Strategy({
     tokenURL: 'https://www.example.com/oauth2/token',
     clientID: EXAMPLE_CLIENT_ID,
     clientSecret: EXAMPLE_CLIENT_SECRET,
+    redirectUrlAsName: true,  //for ebay as ebay need a string instead of URL
     callbackURL: "http://localhost:3000/auth/example/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -103,22 +105,6 @@ executing:
 $ make test-cov
 $ make view-cov
 ```
-
-## Support
-
-#### Funding
-
-This software is provided to you as open source, free of charge.  The time and
-effort to develop and maintain this project is dedicated by [@jaredhanson](https://github.com/jaredhanson).
-If you (or your employer) benefit from this project, please consider a financial
-contribution.  Your contribution helps continue the efforts that produce this
-and other open source software.
-
-Funds are accepted via [PayPal](https://paypal.me/jaredhanson), [Venmo](https://venmo.com/jaredhanson),
-and [other](http://jaredhanson.net/pay) methods.  Any amount is appreciated.
-
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2011-2016 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
