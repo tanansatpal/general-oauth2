@@ -1,6 +1,6 @@
 {
   "name": "general-oauth2",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "OAuth 2.0 authentication strategy for Passport",
   "keywords": [
     "passport",
